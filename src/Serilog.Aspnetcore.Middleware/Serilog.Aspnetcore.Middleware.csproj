@@ -1,6 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>-</Company>
+    <Authors>Thibaut Renoncourt</Authors>
+    <PackageProjectUrl>https://github.com/trenoncourt/serilog-aspnetcore-middleware</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/trenoncourt/serilog-aspnetcore-middleware</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/trenoncourt/serilog-aspnetcore-middleware/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>A middleware for aspnetcore to log httpcontext data with serilog</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions">
