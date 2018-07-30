@@ -13,11 +13,7 @@ namespace Serilog.Aspnetcore.Middleware.Sample
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
+            app.UseHttpContextLogger();
             app.Run(async (context) => { await context.Response.WriteAsync("Hello World!"); });
         }
     }
